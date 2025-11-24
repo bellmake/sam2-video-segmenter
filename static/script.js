@@ -136,6 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 originalResultVideo.src = URL.createObjectURL(videoFile);
                 segmentedResultVideo.src = data.output_video;
+
+                // Update download button
+                const downloadBtn = document.getElementById('download-btn');
+                downloadBtn.href = data.output_video;
             } else {
                 throw new Error('No output video URL returned');
             }

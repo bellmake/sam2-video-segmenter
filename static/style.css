@@ -34,7 +34,8 @@ h1 {
     color: #0f172a;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #334155;
 }
 
@@ -122,7 +123,8 @@ canvas {
     margin-right: 0.5rem;
 }
 
-.primary-btn, .secondary-btn {
+.primary-btn,
+.secondary-btn {
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     font-weight: 600;
@@ -165,12 +167,25 @@ canvas {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .results-section {
     margin-top: 2rem;
+    text-align: center;
+}
+
+.results-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .video-comparison {
@@ -196,7 +211,7 @@ video {
     .video-comparison {
         grid-template-columns: 1fr;
     }
-    
+
     .controls {
         flex-direction: column;
         gap: 1rem;
