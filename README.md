@@ -34,24 +34,16 @@ git clone https://github.com/bellmake/sam2-video-segmenter.git
 cd sam2-video-segmenter
 ```
 
-### 2. 가상환경 생성 및 활성화 (권장)
+### 2. 가상환경 생성 및 활성화 (Conda 권장)
 
-#### Windows (PowerShell)
-```powershell
-# 가상환경 생성
-python -m venv venv
+이 프로젝트는 `conda` 가상환경 사용을 권장합니다.
 
-# 가상환경 활성화
-.\venv\Scripts\Activate
-```
-
-#### Linux / macOS
 ```bash
-# 가상환경 생성
-python3 -m venv venv
+# Conda 환경 생성 (Python 3.10)
+conda create -n sam2 python=3.10 -y
 
 # 가상환경 활성화
-source venv/bin/activate
+conda activate sam2
 ```
 
 ### 3. 의존성 패키지 설치
